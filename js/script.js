@@ -42,7 +42,14 @@ getButton.addEventListener("click", e =>{
 });
 
 textBox.addEventListener("input", function(){
-    runRate();
+    var input = document.getElementById('txtBox').value;
+    if(!/^[0-9,.]*$/.test(input)){
+        alert("Please only enter numbers");
+    }
+    else{
+        runRate();
+    }
+    
 });
 
 const exchangeIcon = document.querySelector("form .icon");
@@ -59,10 +66,10 @@ function runRate(){
     const amount = document.querySelector(".amount input");
     const txtRate = document.querySelector(".rate");
     let amountVal = amount.value;
-    if(amountVal == "" || amountVal == "0"){
-        amount.value ="1"
-        amountVal = 1;
-    }
+    // if(amountVal == "" || amountVal == "0"){
+    //     amount.value ="1"
+    //     amountVal = 1;
+    // }
     txtRate.innerText = "Running...";
     let api = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${fromCurrency.value}`;
     fetch(api).then(response => response.json()).then(result => {
