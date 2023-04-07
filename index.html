@@ -14,18 +14,14 @@
         <form action="#">
             <div class="amount">
                 <p>Enter Amount:</p>
-                <input type="text">
+                <input type="text" pattern="[0-9]+([.,][0-9]+)?">
             </div>
             <div class="drop-list">
                 <div class= "from">
                     <p>From</p>
                     <div class="select-box">
-                        <img src="https://flagcdn.com/w80/ph.png" alt="flag">
+                        <img src="https://flagcdn.com/w80/us.png" alt="flag">
                         <select name="from" id="from">
-                            <option value="PHP">PHP</option>
-                            <option value="USD">USD</option>
-                            <option value="KRW">KRW</option>
-                            <option value="EUR">EUR</option>
                         </select>
                     </div>
                 </div>
@@ -33,21 +29,18 @@
                 <div class= "to">
                     <p>To</p>
                     <div class="select-box">
-                        <img src="https://flagcdn.com/w80/us.png" alt="flag">
+                        <img src="https://flagcdn.com/w80/ph.png" alt="flag">
                         <select name="to" id="to">
-                            <option value="USD">USD</option>
-                            <option value="KRW">KRW</option>
-                            <option value="EUR">EUR</option>
-                            <option value="PHP">PHP</option>
                         </select>
                     </div>
                 </div>
             </div>
             <div class="rate">
-                1 PHP = 0.0018 USD
             </div>
             <button>Run Rate</button>
         </form>
     </div>
+    <script src="/js/country-list.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

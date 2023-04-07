@@ -47,28 +47,59 @@ form input{
     height: 50px;
     font-size: 17px;
     padding: 0 15px;
+    font-family: 'Source Code Pro', monospace;
 }
 form input:focus{
     padding: 0 14px;
 }
 form .drop-list{
     display: flex;
+    margin-top: 20px;
     align-items: center;
     justify-content: space-between;
 }
 .drop-list .select-box{
+    background-color: #FEE0C0;
     display: flex;
     width: 115px;
     height: 45px;
     border-radius: 5px;
     align-items: center;
     justify-content: center;
+    border: 1px solid #999;
 }
 .select-box select{
     width: auto;
     font-size: 16px;
-    margin: 0 -5px 0 5px;
+    margin: 0 -px 0 5px;
+    background-color: #FEE0C0;
+}
+.select-box select::-webkit-scrollbar{
+    width:8px;
+}
+.select-box select::-webkit-scrollbar-track{
+    background: #FEE0C0;
+}
+.select-box select::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 8px;
 }
 .select-box img{
     max-width: 25px;
+}
+.drop-list .icon{
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 30px;
+}
+form .rate{
+   font-size: 17px;
+   margin: 20px 0 30px; 
+}
+form button{
+    height: 52px;
+    color: white;
+    background: slategray;
+    font-size: 17px;
+    cursor: pointer;
 }
