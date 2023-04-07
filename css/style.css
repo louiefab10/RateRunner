@@ -17,22 +17,16 @@ body
 header
 {
     text-align: center;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 500;
 }
 
 .container{
     background: #FEE0C0;
-    width: 400px;
-    padding: 35px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    width: 370px;
+    padding: 30px;
     box-shadow: 15px 30px 35px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    -webkit-perspective: 300px;
-    perspective: 300px;
+    border-radius: 7px;
 }
 .container form
 {
@@ -42,10 +36,39 @@ form :where(input, select, button){
     width: 100%;
     outline: none;
     border: none;
+    border-radius: 5px;
+}
+form p{
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 form input{
+    width: 340px;
     height: 50px;
-    padding-left: 5px;
-    font-size: 20px;
-    border-radius: 10px;
+    font-size: 17px;
+    padding: 0 15px;
+}
+form input:focus{
+    padding: 0 14px;
+}
+form .drop-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.drop-list .select-box{
+    display: flex;
+    width: 115px;
+    height: 45px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.select-box select{
+    width: auto;
+    font-size: 16px;
+    margin: 0 -5px 0 5px;
+}
+.select-box img{
+    max-width: 25px;
 }
