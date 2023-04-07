@@ -3,6 +3,7 @@ const apiKey = '802e8c90084fd47fe7ed51bf';
 fromCurrency = document.querySelector(".from select");
 toCurrency = document.querySelector(".to select");
 getButton = document.querySelector("form button");
+textBox = document.getElementById("txtBox");
 for(let i = 0; i < dropList.length; i++){
     for (currency_code in country_code){
         let selected;
@@ -37,6 +38,10 @@ window.addEventListener("load", e =>{
 
 getButton.addEventListener("click", e =>{
     e.preventDefault();
+    runRate();
+});
+
+textBox.addEventListener("input", function(){
     runRate();
 });
 
