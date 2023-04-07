@@ -44,7 +44,8 @@ getButton.addEventListener("click", e =>{
 textBox.addEventListener("input", function(){
     var input = document.getElementById('txtBox').value;
     if(!/^[0-9,.]*$/.test(input)){
-        alert("Please only enter numbers");
+        if(alert('Please only enter numbers.')){}
+        else window.location.reload();
     }
     else{
         runRate();
