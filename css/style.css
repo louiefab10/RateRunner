@@ -5,10 +5,7 @@
 
 body
 {
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-    justify-content: center;
+    height: 100%;
     font-family: 'Source Code Pro', monospace;
     background-color: #3F4E4F;
     
@@ -22,11 +19,17 @@ header
 }
 
 .container{
+    position: absolute;
+    transform: translate(-50%, -50%);
     background: #DCD7C9;
-    width: 370px;
-    padding: 30px;
+    width: 400px;
+    padding: 35px;
     box-shadow: 15px 30px 35px rgba(0,0,0,0.1);
-    border-radius: 7px;
+    border-radius: 10px;
+    perspective: 300px;
+    -webkit-perspective: 300px;
+    top: 50%;
+    left: 50%;
 }
 .container form
 {
@@ -43,7 +46,7 @@ form p{
     margin-bottom: 5px;
 }
 form input{
-    width: 340px;
+    width: 370px;
     height: 50px;
     font-size: 17px;
     padding: 0 15px;
