@@ -9,18 +9,17 @@ body
     width: auto;
     font-family: 'Source Code Pro', monospace;
     background-color: #3F4E4F;
-    
 }
 
 header
 {
     text-align: center;
     font-size: 28px;
-    font-weight: 500;
 }
 
 .container{
     position: absolute;
+    width: 350px;
     transform: translate(-50%, -50%);
     background: #DCD7C9;
     padding: 35px;
@@ -46,14 +45,11 @@ form p{
     margin-bottom: 5px;
 }
 form input{
-    width: 370px;
+    width: 332px;
     height: 50px;
     font-size: 17px;
-    padding: 0 15px;
+    padding-left: 15px;
     font-family: 'Source Code Pro', monospace;
-}
-form input:focus{
-    padding: 0 14px;
 }
 form .drop-list{
     display: flex;
@@ -93,7 +89,7 @@ form .drop-list{
 .drop-list .icon{
     cursor: pointer;
     font-size: 22px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 form .rate{
    font-size: 17px;
