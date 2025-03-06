@@ -18,6 +18,7 @@ for(let i = 0; i < dropList.length; i++){
     }
     dropList[i].addEventListener("change", e => {
         loadFlag(e.target);
+        runRate();
     });
 }
 
