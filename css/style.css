@@ -11,10 +11,43 @@ body
     background-color: #3F4E4F;
 }
 
+.jumbotron{
+    position: absolute;
+    width: 380px;
+    left: 32%;
+    font-size: 20px;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    color: #FEE0C0;
+}
+
 header
 {
     text-align: center;
     font-size: 28px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.type-selector{
+    font-weight: bold;
+    text-align: center;
+}
+
+.type-selector select{
+    width: 332px;
+    height: 50px;
+    background-color: white;
+    font-size: 17px;
+    padding-left: 15px;
+    border-radius: 5px;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .container{
