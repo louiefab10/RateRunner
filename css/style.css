@@ -85,6 +85,7 @@ form input{
     font-family: 'Source Code Pro', monospace;
 }
 form .drop-list{
+    max-width: auto;
     display: flex;
     margin-top: 20px;
     align-items: center;
